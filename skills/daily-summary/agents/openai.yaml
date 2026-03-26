@@ -1,0 +1,3 @@
+interface:
+  display_name: "Daily Summary"
+  short_description: "Help summarize progress and produce daily updates"

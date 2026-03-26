@@ -1,0 +1,3 @@
+interface:
+  display_name: "Admin Followup"
+  short_description: "Help track admin tasks and close routine followups"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Environment Debugging"
+  short_description: "Help fix local environment and runtime setup issues"

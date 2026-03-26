@@ -1,0 +1,3 @@
+interface:
+  display_name: "Task Decomposition"
+  short_description: "Help break goals into scoped tasks and priorities"

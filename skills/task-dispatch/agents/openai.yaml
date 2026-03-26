@@ -1,0 +1,3 @@
+interface:
+  display_name: "Task Dispatch"
+  short_description: "Help assign work to the right staff with handoffs"
