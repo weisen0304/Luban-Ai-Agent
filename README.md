@@ -27,6 +27,9 @@
 鲁班-Ai智能体/
 ├─ README.md
 ├─ SKILL.md
+├─ assets/
+│  ├─ avatars/
+│  └─ logos/
 ├─ skills/
 │  ├─ control-decision/
 │  ├─ task-decomposition/
@@ -42,8 +45,35 @@
 │  ├─ feishu-communication/
 │  ├─ wecom-communication/
 │  └─ admin-followup/
-└─ 员工角色图片资源
+└─ 员工角色资源
 ```
+
+## 视觉资源
+
+### Logo
+
+![鲁班-AI智能体 Logo](./assets/logos/luban-ai-agent-logo.png)
+
+### 员工头像
+
+| 员工 | 头像 |
+| --- | --- |
+| 鲁班主控 | ![鲁班主控](./assets/avatars/luban-master.png) |
+| 鲁班1号 | ![鲁班1号](./assets/avatars/luban-01.png) |
+| 鲁班2号 | ![鲁班2号](./assets/avatars/luban-02.png) |
+| 范蠡 | ![范蠡](./assets/avatars/fan-li.png) |
+| 吕不韦 | ![吕不韦](./assets/avatars/lv-buwei.png) |
+| 上官婉儿 | ![上官婉儿](./assets/avatars/shangguan-waner.png) |
+| 诸葛亮 | ![诸葛亮](./assets/avatars/zhuge-liang.png) |
+| 小昭 | ![小昭](./assets/avatars/xiao-zhao.png) |
+| 阿朱 | ![阿朱](./assets/avatars/a-zhu.png) |
+
+### 资源命名规则
+
+- `assets/logos` 存放项目 Logo
+- `assets/avatars` 存放员工头像
+- 文件名统一使用英文小写加连字符
+- 新增员工头像时，优先沿用同样的命名规则
 
 ## 核心设计
 
@@ -191,4 +221,3 @@ SKILL 层负责定义可复用的职能能力。
 ## 联系方式
 
 官网：`www.lubanos.com`
-
