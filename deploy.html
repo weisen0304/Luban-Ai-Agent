@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>部署发布 | 鲁班-AI智能体</title>
+    <meta name="description" content="鲁班-AI智能体官网的部署发布说明，适用于 GitHub Pages 等静态托管场景。" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <img src="./assets/logos/luban-ai-agent-logo.png" alt="鲁班-AI智能体 Logo" />
+          <span>鲁班-AI智能体</span>
+        </a>
+        <nav class="site-nav">
+          <a href="./index.html">首页</a>
+          <a href="./about.html">关于我们</a>
+          <a href="./agents.html">员工详情</a>
+          <a href="./skills.html">SKILL 模块</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero hero-simple">
+          <div class="hero-copy">
+            <p class="eyebrow">Deploy</p>
+            <h1>这套官网已经适合直接发布到静态托管平台</h1>
+            <p class="hero-text">
+              当前站点全部由静态 HTML、CSS 和本地资源构成，天然适合部署到 GitHub Pages、
+              Cloudflare Pages 或任意静态文件服务器。
+            </p>
+          </div>
+          <div class="hero-card glow-card">
+            <p class="card-label">当前特性</p>
+            <h2>零构建、零依赖、直接打开就能运行</h2>
+            <ul>
+              <li>根目录页面可直接作为入口发布</li>
+              <li>所有页面都使用相对路径</li>
+              <li>资源已经统一收纳到 assets 目录</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section architecture-section">
+          <div class="section-heading">
+            <p class="eyebrow">Publishing Steps</p>
+            <h2>推荐发布方式</h2>
+          </div>
+          <div class="architecture-grid">
+            <article class="architecture-card architecture-card-primary">
+              <span class="architecture-index">01</span>
+              <h3>GitHub Pages</h3>
+              <p>最适合当前仓库结构。直接选择 `main` 分支根目录作为发布源即可。</p>
+            </article>
+            <article class="architecture-card">
+              <span class="architecture-index">02</span>
+              <h3>静态服务器</h3>
+              <p>把整个目录上传到任意 Nginx、Apache 或对象存储静态站点即可运行。</p>
+            </article>
+            <article class="architecture-card">
+              <span class="architecture-index">03</span>
+              <h3>后续演进</h3>
+              <p>如果以后需要表单、接口或后台，再升级为前后端项目也完全兼容。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section scenario-section">
+          <div class="section-heading">
+            <p class="eyebrow">Release Checklist</p>
+            <h2>发布前建议检查</h2>
+          </div>
+          <div class="scenario-grid">
+            <article class="scenario-card scenario-card-dev">
+              <span>内容</span>
+              <h3>检查页面文案</h3>
+              <p>确认首页、员工页、SKILL 页和详情页的文案都符合你想对外展示的口径。</p>
+            </article>
+            <article class="scenario-card scenario-card-finance">
+              <span>资源</span>
+              <h3>检查图片与路径</h3>
+              <p>确保头像、Logo 和详情页链接都能正常访问，没有断链或丢图。</p>
+            </article>
+            <article class="scenario-card scenario-card-collab">
+              <span>入口</span>
+              <h3>检查导航闭环</h3>
+              <p>确保首页、列表页、详情页和部署页之间都能互相返回，不形成死路。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section cta-section">
+          <div class="cta-copy">
+            <p class="eyebrow">Ready To Ship</p>
+            <h2>下一步可以直接提交并推送，再开启 GitHub Pages</h2>
+            <p>如果你要，我下一步可以直接帮你把这一整套官网改动提交并推到仓库。</p>
+          </div>
+          <div class="cta-actions">
+            <a class="button button-primary" href="./index.html">返回首页</a>
+            <a class="button button-secondary" href="./README.md">查看项目说明</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>员工详情 | 鲁班-AI智能体</title>
+    <meta
+      name="description"
+      content="查看鲁班-AI智能体的员工矩阵、角色定位、职责边界和默认挂载能力。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <img src="./assets/logos/luban-ai-agent-logo.png" alt="鲁班-AI智能体 Logo" />
+          <span>鲁班-AI智能体</span>
+        </a>
+        <nav class="site-nav">
+          <a href="./index.html">首页</a>
+          <a href="./about.html">关于我们</a>
+          <a href="./skills.html">SKILL 模块</a>
+          <a href="./deploy.html">部署发布</a>
+          <a href="./README.md">项目说明</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero hero-simple">
+          <div class="hero-copy">
+            <p class="eyebrow">Agent Profiles</p>
+            <h1>每位员工都有身份、边界和默认能力包</h1>
+            <p class="hero-text">
+              员工不是随意命名的人设，而是围绕平台、职责和默认 SKILL 组合设计出的可执行角色。
+            </p>
+          </div>
+        </section>
+
+        <section class="signal-bar">
+          <div class="signal-chip">
+            <span>身份</span>
+            <strong>每位员工都有明确定位</strong>
+          </div>
+          <div class="signal-chip">
+            <span>平台</span>
+            <strong>不同员工服务不同渠道</strong>
+          </div>
+          <div class="signal-chip">
+            <span>能力</span>
+            <strong>默认挂载不同 SKILL 模块</strong>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="eyebrow">All Staff</p>
+            <h2>员工详情总览</h2>
+          </div>
+          <div class="agent-grid">
+            <article class="agent-card feature-card">
+              <img src="./assets/avatars/luban-master.png" alt="鲁班主控" />
+              <div>
+                <h3>鲁班主控</h3>
+                <p>总控中枢，统一接收任务并做最终拍板。</p>
+                <ul class="agent-tags"><li>iPhone</li><li>总控</li><li>决策</li></ul>
+                <span>默认能力：总控决策 / 任务分派</span>
+                <a class="card-link" href="./agent-luban-master.html">查看详情</a>
+              </div>
+            </article>
+            <article class="agent-card">
+              <img src="./assets/avatars/luban-01.png" alt="鲁班1号" />
+              <div>
+                <h3>鲁班1号</h3>
+                <p>负责主实现、主修复和工程落地。</p>
+                <ul class="agent-tags"><li>Windows</li><li>开发</li><li>调试</li></ul>
+                <span>默认能力：开发实现 / Bug 排查 / 环境调试</span>
+                <a class="card-link" href="./agent-luban-01.html">查看详情</a>
+              </div>
+            </article>
+            <article class="agent-card">
+              <img src="./assets/avatars/luban-02.png" alt="鲁班2号" />
+              <div>
+                <h3>鲁班2号</h3>
+                <p>负责第二方案、复核和兼容支持。</p>
+                <ul class="agent-tags"><li>Mac</li><li>复核</li><li>兼容</li></ul>
+                <span>默认能力：开发实现 / 技术复核</span>
+                <a class="card-link" href="./agent-luban-02.html">查看详情</a>
+              </div>
+            </article>
+            <article class="agent-card">
+              <img src="./assets/avatars/fan-li.png" alt="范蠡" />
+              <div>
+                <h3>范蠡</h3>
+                <p>投资研究员工，聚焦机会判断。</p>
+                <ul class="agent-tags"><li>富途</li><li>研究</li><li>机会</li></ul>
+                <span>默认能力：投资研究</span>
+                <a class="card-link" href="./agent-fan-li.html">查看详情</a>
+              </div>
+            </article>
+            <article class="agent-card">
+              <img src="./assets/avatars/lv-buwei.png" alt="吕不韦" />
+              <div>
+                <h3>吕不韦</h3>
+                <p>理财复核员工，聚焦风险补充。</p>
+                <ul class="agent-tags"><li>富途</li><li>风控</li><li>复核</li></ul>
+                <span>默认能力：风险复核</span>
+                <a class="card-link" href="./agent-lv-buwei.html">查看详情</a>
+              </div>
+            </article>
+            <article class="agent-card">
+              <img src="./assets/avatars/shangguan-waner.png" alt="上官婉儿" />
+              <div>
+                <h3>上官婉儿</h3>
+                <p>日报员工，负责汇总与提醒。</p>
+                <ul class="agent-tags"><li>微信</li><li>日报</li><li>提醒</li></ul>
+                <span>默认能力：日报汇总 / 重点提醒</span>
+                <a class="card-link" href="./agent-shangguan-waner.html">查看详情</a>
+              </div>
+            </article>
+            <article class="agent-card">
+              <img src="./assets/avatars/zhuge-liang.png" alt="诸葛亮" />
+              <div>
+                <h3>诸葛亮</h3>
+                <p>谋略与调度核心，负责拆解和分派。</p>
+                <ul class="agent-tags"><li>飞书</li><li>拆解</li><li>调度</li></ul>
+                <span>默认能力：任务拆解 / 任务分派</span>
+                <a class="card-link" href="./agent-zhuge-liang.html">查看详情</a>
+              </div>
+            </article>
+            <article class="agent-card">
+              <img src="./assets/avatars/xiao-zhao.png" alt="小昭" />
+              <div>
+                <h3>小昭</h3>
+                <p>飞书协同员工，负责群沟通和日常杂务。</p>
+                <ul class="agent-tags"><li>飞书</li><li>协同</li><li>跟进</li></ul>
+                <span>默认能力：飞书沟通 / 杂务跟进</span>
+                <a class="card-link" href="./agent-xiao-zhao.html">查看详情</a>
+              </div>
+            </article>
+            <article class="agent-card">
+              <img src="./assets/avatars/a-zhu.png" alt="阿朱" />
+              <div>
+                <h3>阿朱</h3>
+                <p>企业微信协同员工，负责正式事务闭环。</p>
+                <ul class="agent-tags"><li>企业微信</li><li>通知</li><li>协同</li></ul>
+                <span>默认能力：企业微信沟通 / 杂务跟进</span>
+                <a class="card-link" href="./agent-a-zhu.html">查看详情</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section architecture-section">
+          <div class="section-heading">
+            <p class="eyebrow">Detailed Profiles</p>
+            <h2>核心员工详情</h2>
+            <p>下面不是简单名单，而是每位员工在组织里的职责位置、平台角色和协作方式。</p>
+          </div>
+
+          <div class="profile-grid">
+            <article class="profile-card">
+              <div class="profile-head">
+                <img src="./assets/avatars/luban-master.png" alt="鲁班主控" />
+                <div>
+                  <p class="profile-role">总控中枢</p>
+                  <h3>鲁班主控</h3>
+                </div>
+              </div>
+              <p>负责总入口、总判断、总验收。任何高风险或多人冲突任务，最终都要回到主控收敛。</p>
+              <ul>
+                <li>平台：iPhone / 主控端</li>
+                <li>默认职责：接收任务、拍板决策、统一验收</li>
+                <li>默认能力：总控决策、任务分派</li>
+              </ul>
+            </article>
+
+            <article class="profile-card">
+              <div class="profile-head">
+                <img src="./assets/avatars/zhuge-liang.png" alt="诸葛亮" />
+                <div>
+                  <p class="profile-role">调度中枢</p>
+                  <h3>诸葛亮</h3>
+                </div>
+              </div>
+              <p>负责拆解目标、安排优先级、分派员工，是多角色协同任务的第一调度入口。</p>
+              <ul>
+                <li>平台：飞书</li>
+                <li>默认职责：拆解、分派、推进</li>
+                <li>默认能力：任务拆解、任务分派</li>
+              </ul>
+            </article>
+
+            <article class="profile-card">
+              <div class="profile-head">
+                <img src="./assets/avatars/luban-01.png" alt="鲁班1号" />
+                <div>
+                  <p class="profile-role">开发主力</p>
+                  <h3>鲁班1号</h3>
+                </div>
+              </div>
+              <p>承担主要开发、问题定位和工程落地，是执行链路里最偏“动手解决”的员工。</p>
+              <ul>
+                <li>平台：Windows</li>
+                <li>默认职责：开发、修复、调试</li>
+                <li>默认能力：开发实现、Bug 排查、环境调试</li>
+              </ul>
+            </article>
+
+            <article class="profile-card">
+              <div class="profile-head">
+                <img src="./assets/avatars/fan-li.png" alt="范蠡" />
+                <div>
+                  <p class="profile-role">研究主力</p>
+                  <h3>范蠡</h3>
+                </div>
+              </div>
+              <p>偏进攻型研究角色，擅长机会判断、研究表达和策略前瞻。</p>
+              <ul>
+                <li>平台：富途理财场景</li>
+                <li>默认职责：研究、判断、建议</li>
+                <li>默认能力：投资研究</li>
+              </ul>
+            </article>
+
+            <article class="profile-card">
+              <div class="profile-head">
+                <img src="./assets/avatars/shangguan-waner.png" alt="上官婉儿" />
+                <div>
+                  <p class="profile-role">汇总中枢</p>
+                  <h3>上官婉儿</h3>
+                </div>
+              </div>
+              <p>负责把所有员工的阶段性结果整理成日报、周报和重点提醒，帮助主控快速掌握全局。</p>
+              <ul>
+                <li>平台：微信</li>
+                <li>默认职责：汇总、提醒、同步</li>
+                <li>默认能力：日报汇总、重点提醒</li>
+              </ul>
+            </article>
+
+            <article class="profile-card">
+              <div class="profile-head">
+                <img src="./assets/avatars/a-zhu.png" alt="阿朱" />
+                <div>
+                  <p class="profile-role">正式协同</p>
+                  <h3>阿朱</h3>
+                </div>
+              </div>
+              <p>负责企业微信场景的正式通知和协作闭环，是组织对内协同的稳妥出口之一。</p>
+              <ul>
+                <li>平台：企业微信</li>
+                <li>默认职责：通知、协同、跟进</li>
+                <li>默认能力：企业微信沟通、杂务跟进</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section cta-section">
+          <div class="cta-copy">
+            <p class="eyebrow">Explore More</p>
+            <h2>继续查看职能模块如何分派给不同员工</h2>
+          </div>
+          <div class="cta-actions">
+            <a class="button button-primary" href="./skills.html">查看 SKILL 模块</a>
+            <a class="button button-secondary" href="./index.html">返回首页</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

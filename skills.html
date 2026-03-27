@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKILL 模块 | 鲁班-AI智能体</title>
+    <meta
+      name="description"
+      content="查看鲁班-AI智能体的独立职能 SKILL 模块，以及模块化能力设计方式。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <img src="./assets/logos/luban-ai-agent-logo.png" alt="鲁班-AI智能体 Logo" />
+          <span>鲁班-AI智能体</span>
+        </a>
+        <nav class="site-nav">
+          <a href="./index.html">首页</a>
+          <a href="./about.html">关于我们</a>
+          <a href="./agents.html">员工详情</a>
+          <a href="./deploy.html">部署发布</a>
+          <a href="./README.md">项目说明</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero hero-simple">
+          <div class="hero-copy">
+            <p class="eyebrow">Skill Modules</p>
+            <h1>把能力拆成模块，系统才能真正扩展</h1>
+            <p class="hero-text">
+              SKILL 是这套系统的能力底座。一个员工可以挂载多个模块，一个模块也可以被多个员工复用。
+            </p>
+          </div>
+        </section>
+
+        <section class="signal-bar">
+          <div class="signal-chip">
+            <span>复用</span>
+            <strong>一个模块可服务多个员工</strong>
+          </div>
+          <div class="signal-chip">
+            <span>组合</span>
+            <strong>一个员工可挂载多个模块</strong>
+          </div>
+          <div class="signal-chip">
+            <span>扩展</span>
+            <strong>新增岗位先补模块再配员工</strong>
+          </div>
+        </section>
+
+        <section class="section section-dark">
+          <div class="section-heading">
+            <p class="eyebrow">Module Library</p>
+            <h2>SKILL 模块总览</h2>
+          </div>
+          <div class="skill-grid">
+            <article class="skill-card"><h3>总控决策</h3><p>总入口、总判断、总拍板。</p><a class="card-link" href="./skill-control-decision.html">查看详情</a></article>
+            <article class="skill-card"><h3>任务拆解</h3><p>把目标拆成可执行结构。</p><a class="card-link" href="./skill-task-decomposition.html">查看详情</a></article>
+            <article class="skill-card"><h3>任务分派</h3><p>明确员工、交付物和时限。</p><a class="card-link" href="./skill-task-dispatch.html">查看详情</a></article>
+            <article class="skill-card"><h3>开发实现</h3><p>负责代码和工程落地。</p><a class="card-link" href="./skill-development-implementation.html">查看详情</a></article>
+            <article class="skill-card"><h3>Bug 排查</h3><p>定位故障并设计排查顺序。</p><a class="card-link" href="./skill-bug-triage.html">查看详情</a></article>
+            <article class="skill-card"><h3>环境调试</h3><p>处理依赖、配置和运行环境问题。</p><a class="card-link" href="./skill-environment-debugging.html">查看详情</a></article>
+            <article class="skill-card"><h3>技术复核</h3><p>提供第二方案和风险差异。</p><a class="card-link" href="./skill-technical-review.html">查看详情</a></article>
+            <article class="skill-card"><h3>投资研究</h3><p>研究标的、分析机会与市场变化。</p><a class="card-link" href="./skill-investment-research.html">查看详情</a></article>
+            <article class="skill-card"><h3>风险复核</h3><p>补充风险视角和保守判断。</p><a class="card-link" href="./skill-risk-review.html">查看详情</a></article>
+            <article class="skill-card"><h3>日报汇总</h3><p>输出进展、待办和重点变化。</p><a class="card-link" href="./skill-daily-summary.html">查看详情</a></article>
+            <article class="skill-card"><h3>重点提醒</h3><p>把关键节点和风险任务提出来。</p><a class="card-link" href="./skill-key-reminders.html">查看详情</a></article>
+            <article class="skill-card"><h3>飞书沟通</h3><p>生成飞书场景话术和协同同步。</p><a class="card-link" href="./skill-feishu-communication.html">查看详情</a></article>
+            <article class="skill-card"><h3>企业微信沟通</h3><p>输出正式稳妥的企业微信口径。</p><a class="card-link" href="./skill-wecom-communication.html">查看详情</a></article>
+            <article class="skill-card"><h3>杂务跟进</h3><p>处理零散事务并推动闭环。</p><a class="card-link" href="./skill-admin-followup.html">查看详情</a></article>
+          </div>
+        </section>
+
+        <section class="section architecture-section">
+          <div class="section-heading">
+            <p class="eyebrow">Module Categories</p>
+            <h2>模块分类结构</h2>
+            <p>不同模块服务不同业务层，组合起来才构成完整组织能力。</p>
+          </div>
+
+          <div class="architecture-grid">
+            <article class="architecture-card architecture-card-primary">
+              <span class="architecture-index">控制类</span>
+              <h3>主控与调度模块</h3>
+              <p>包括总控决策、任务拆解、任务分派，用于让系统先有秩序再有执行。</p>
+              <ul>
+                <li>总控决策</li>
+                <li>任务拆解</li>
+                <li>任务分派</li>
+              </ul>
+            </article>
+            <article class="architecture-card">
+              <span class="architecture-index">执行类</span>
+              <h3>开发与研究模块</h3>
+              <p>包括开发实现、Bug 排查、环境调试、技术复核、投资研究、风险复核。</p>
+              <ul>
+                <li>开发实现</li>
+                <li>技术复核</li>
+                <li>投资研究 / 风险复核</li>
+              </ul>
+            </article>
+            <article class="architecture-card">
+              <span class="architecture-index">协同类</span>
+              <h3>汇总与沟通模块</h3>
+              <p>包括日报汇总、重点提醒、飞书沟通、企业微信沟通、杂务跟进。</p>
+              <ul>
+                <li>日报汇总</li>
+                <li>重点提醒</li>
+                <li>飞书 / 企业微信沟通</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section architecture-section">
+          <div class="section-heading">
+            <p class="eyebrow">Modularity</p>
+            <h2>为什么一定要模块化</h2>
+          </div>
+          <div class="architecture-grid">
+            <article class="architecture-card architecture-card-primary">
+              <span class="architecture-index">A</span>
+              <h3>减少重复定义</h3>
+              <p>相同能力只定义一次，后续直接复用，不需要在每位员工身上重复写“擅长”。</p>
+            </article>
+            <article class="architecture-card">
+              <span class="architecture-index">B</span>
+              <h3>方便新增岗位</h3>
+              <p>新增员工时只要重新组合固定挂载和临时挂载模块，就能快速接入系统。</p>
+            </article>
+            <article class="architecture-card">
+              <span class="architecture-index">C</span>
+              <h3>便于自动路由</h3>
+              <p>任务未来可以先匹配模块，再根据模块自动选员工，系统会更稳定。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section cta-section">
+          <div class="cta-copy">
+            <p class="eyebrow">Explore More</p>
+            <h2>继续查看员工层如何挂载这些能力模块</h2>
+          </div>
+          <div class="cta-actions">
+            <a class="button button-primary" href="./agents.html">查看员工详情</a>
+            <a class="button button-secondary" href="./index.html">返回首页</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
