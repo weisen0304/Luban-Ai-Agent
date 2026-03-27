@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>项目说明 | 鲁班-AI智能体</title>
+    <meta
+      name="description"
+      content="鲁班-AI智能体项目说明页面，介绍项目定位、仓库结构、使用方式、扩展方向与维护原则。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <img src="./assets/logos/luban-ai-agent-logo.png" alt="鲁班-AI智能体 Logo" />
+          <span>鲁班-AI智能体</span>
+        </a>
+        <nav class="site-nav">
+          <a href="./index.html">首页</a>
+          <a href="./about.html">关于我们</a>
+          <a href="./agents.html">员工详情</a>
+          <a href="./skills.html">SKILL 模块</a>
+          <a href="./deploy.html">部署发布</a>
+          <a href="./project.html">项目说明</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero hero-simple">
+          <div class="hero-copy">
+            <p class="eyebrow">Project Overview</p>
+            <h1>项目说明</h1>
+            <p class="hero-text">
+              鲁班-AI智能体是一个面向个人与团队的多 Agent 数字员工系统。
+              它的目标不是做一个单点聊天助手，而是构建一套可调度、可分工、可汇总、可拍板的数字员工组织。
+            </p>
+          </div>
+          <div class="hero-card glow-card">
+            <p class="card-label">项目核心</p>
+            <h2>员工是角色容器，SKILL 是能力单元，主控负责组织秩序。</h2>
+          </div>
+        </section>
+
+        <section class="signal-bar">
+          <div class="signal-chip">
+            <span>定位</span>
+            <strong>多 Agent 数字员工系统</strong>
+          </div>
+          <div class="signal-chip">
+            <span>结构</span>
+            <strong>员工层 + SKILL 层 + 主控层</strong>
+          </div>
+          <div class="signal-chip">
+            <span>目标</span>
+            <strong>把 AI 组织成真实协作体系</strong>
+          </div>
+        </section>
+
+        <section class="section architecture-section">
+          <div class="section-heading">
+            <p class="eyebrow">Repository</p>
+            <h2>仓库结构</h2>
+            <p>当前仓库同时包含技能体系文档、官网页面、视觉资源和模块目录。</p>
+          </div>
+          <div class="architecture-grid">
+            <article class="architecture-card architecture-card-primary">
+              <span class="architecture-index">01</span>
+              <h3>官网页面</h3>
+              <p>包含首页、关于页、员工详情页、SKILL 模块页、详情页和部署页。</p>
+            </article>
+            <article class="architecture-card">
+              <span class="architecture-index">02</span>
+              <h3>技能体系</h3>
+              <p>`SKILL.md` 负责定义总体系，`skills/` 目录负责存放拆分后的独立职能模块。</p>
+            </article>
+            <article class="architecture-card">
+              <span class="architecture-index">03</span>
+              <h3>资源目录</h3>
+              <p>`assets/avatars` 存放员工头像，`assets/logos` 存放项目 Logo 和品牌资源。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section scenario-section">
+          <div class="section-heading">
+            <p class="eyebrow">How It Works</p>
+            <h2>使用方式</h2>
+            <p>这套系统可以按角色使用，也可以按模块使用，还可以按协作链路使用。</p>
+          </div>
+          <div class="scenario-grid">
+            <article class="scenario-card scenario-card-dev">
+              <span>按员工</span>
+              <h3>直接分派给角色</h3>
+              <p>例如把开发任务交给鲁班1号，把研究任务交给范蠡，把汇总任务交给上官婉儿。</p>
+            </article>
+            <article class="scenario-card scenario-card-finance">
+              <span>按模块</span>
+              <h3>先识别能力再选员工</h3>
+              <p>例如登录报错对应 Bug 排查与环境调试，项目启动对应任务拆解与任务分派。</p>
+            </article>
+            <article class="scenario-card scenario-card-collab">
+              <span>按流程</span>
+              <h3>走完整协作闭环</h3>
+              <p>诸葛亮拆解，员工执行，上官婉儿汇总，鲁班主控拍板，形成完整任务链。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section architecture-section">
+          <div class="section-heading">
+            <p class="eyebrow">Expansion</p>
+            <h2>后续扩展方向</h2>
+          </div>
+          <div class="architecture-grid">
+            <article class="architecture-card architecture-card-primary">
+              <span class="architecture-index">A</span>
+              <h3>运营岗位扩展</h3>
+              <p>继续补充亚马逊运营、顺风车运营、星链项目等新角色和新模块。</p>
+            </article>
+            <article class="architecture-card">
+              <span class="architecture-index">B</span>
+              <h3>自动化路由</h3>
+              <p>让系统根据任务类型自动匹配 SKILL，再自动路由到最适合的员工。</p>
+            </article>
+            <article class="architecture-card">
+              <span class="architecture-index">C</span>
+              <h3>多平台接入</h3>
+              <p>继续接入飞书、企业微信、微信和更多工作平台，形成统一调度中枢。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section cta-section">
+          <div class="cta-copy">
+            <p class="eyebrow">Reference</p>
+            <h2>文档版说明仍然保留</h2>
+            <p>如果你需要查看原始文档说明，也可以直接打开仓库中的 README 和总技能文档。</p>
+          </div>
+          <div class="cta-actions">
+            <a class="button button-primary" href="./README.md">查看 README</a>
+            <a class="button button-secondary" href="./SKILL.md">查看 SKILL 总文档</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
