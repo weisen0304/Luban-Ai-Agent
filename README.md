@@ -27,9 +27,24 @@
 鲁班-Ai智能体/
 ├─ README.md
 ├─ SKILL.md
-├─ assets/
-│  ├─ avatars/
-│  └─ logos/
+├─ frontend/
+│  ├─ README.md
+│  └─ site/
+│     ├─ index.html
+│     ├─ about.html
+│     ├─ agents.html
+│     ├─ skills.html
+│     ├─ deploy.html
+│     ├─ project.html
+│     ├─ styles.css
+│     └─ assets/
+│        ├─ avatars/
+│        └─ logos/
+├─ deploy/
+│  └─ nginx/
+│     └─ luban-ai-agent.conf
+├─ scripts/
+│  └─ deploy-frontend.sh
 ├─ skills/
 │  ├─ control-decision/
 │  ├─ task-decomposition/
@@ -45,35 +60,45 @@
 │  ├─ feishu-communication/
 │  ├─ wecom-communication/
 │  └─ admin-followup/
-└─ 员工角色资源
+└─ 技能与官网资源
 ```
+
+官网前端现在统一放在 `frontend/site/` 下管理，部署时直接发布这个目录即可。
 
 ## 视觉资源
 
 ### Logo
 
-![鲁班-AI智能体 Logo](./assets/logos/luban-ai-agent-logo.png)
+![鲁班-AI智能体 Logo](./frontend/site/assets/logos/luban-ai-agent-logo.png)
 
 ### 员工头像
 
 | 员工 | 头像 |
 | --- | --- |
-| 鲁班主控 | ![鲁班主控](./assets/avatars/luban-master.png) |
-| 鲁班1号 | ![鲁班1号](./assets/avatars/luban-01.png) |
-| 鲁班2号 | ![鲁班2号](./assets/avatars/luban-02.png) |
-| 范蠡 | ![范蠡](./assets/avatars/fan-li.png) |
-| 吕不韦 | ![吕不韦](./assets/avatars/lv-buwei.png) |
-| 上官婉儿 | ![上官婉儿](./assets/avatars/shangguan-waner.png) |
-| 诸葛亮 | ![诸葛亮](./assets/avatars/zhuge-liang.png) |
-| 小昭 | ![小昭](./assets/avatars/xiao-zhao.png) |
-| 阿朱 | ![阿朱](./assets/avatars/a-zhu.png) |
+| 鲁班主控 | ![鲁班主控](./frontend/site/assets/avatars/luban-master.png) |
+| 鲁班1号 | ![鲁班1号](./frontend/site/assets/avatars/luban-01.png) |
+| 鲁班2号 | ![鲁班2号](./frontend/site/assets/avatars/luban-02.png) |
+| 范蠡 | ![范蠡](./frontend/site/assets/avatars/fan-li.png) |
+| 吕不韦 | ![吕不韦](./frontend/site/assets/avatars/lv-buwei.png) |
+| 上官婉儿 | ![上官婉儿](./frontend/site/assets/avatars/shangguan-waner.png) |
+| 诸葛亮 | ![诸葛亮](./frontend/site/assets/avatars/zhuge-liang.png) |
+| 小昭 | ![小昭](./frontend/site/assets/avatars/xiao-zhao.png) |
+| 阿朱 | ![阿朱](./frontend/site/assets/avatars/a-zhu.png) |
 
 ### 资源命名规则
 
-- `assets/logos` 存放项目 Logo
-- `assets/avatars` 存放员工头像
+- `frontend/site/assets/logos` 存放项目 Logo
+- `frontend/site/assets/avatars` 存放员工头像
 - 文件名统一使用英文小写加连字符
 - 新增员工头像时，优先沿用同样的命名规则
+
+## 官网部署
+
+官网发布目录为 `frontend/site/`。
+
+- 服务器部署可直接复用 `deploy/nginx/luban-ai-agent.conf`
+- 同步脚本见 `scripts/deploy-frontend.sh`
+- 若使用 GitHub Pages、Cloudflare Pages 等静态托管，只需要把发布根目录指向 `frontend/site`
 
 ## 核心设计
 
